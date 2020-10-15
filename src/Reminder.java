@@ -14,8 +14,6 @@ public class Reminder
         int choice=0;
         Scanner input = new Scanner(System.in);
         choice=input.nextInt();
-        if(choice>=1||choice<=4)
-        {
             if (choice == 1)
             {
                 System.out.println("Your choice is a full-size car and the price is $175 per week.");
@@ -36,28 +34,11 @@ public class Reminder
             {
                 System.out.println("You don't choose any car, so the price is $0.");
             }
-            System.out.println("Do you want add premium sound package?\n1 is yes, 2 is no");
-            choice=input.nextByte();
-            if(choice==1)
-            {
-                System.out.println("The premium sound package adds $30 to the rental cost.");
-            }
-            else
-            {
-                System.out.println("You are all sit.");
-            }
-        }
-        else
-        {
-            System.out.println("You don't choose any car, so the price is $0.");
-        }
     }
 
     public static void main(String[] args)
     {
         showList();
         ifElse();
-
-
     }
 }
